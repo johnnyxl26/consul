@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-gem 'dotenv-rails', groups: [:development, :test]
+gem "figaro"
 
 gem 'rails', '4.2.9'
 
