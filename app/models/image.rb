@@ -11,7 +11,7 @@ class Image < ActiveRecord::Base
                                  url: "/system/:class/:prefix/:style/:hash.:extension",
                                  hash_data: ":class/:style",
                                  use_timestamp: false,
-                                 hash_secret: Rails.application.secrets.secret_key_base
+                                 hash_secret:  ENV['SECRET_KEY_BASE']
   attr_accessor :cached_attachment
 
   belongs_to :user

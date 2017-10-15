@@ -8,11 +8,11 @@ class SMSApi
 
   def url
     return "" unless end_point_available?
-    open(Rails.application.secrets.sms_end_point).base_uri.to_s
+    open(ENV['SMS_END_POINT']).base_uri.to_s
   end
 
   def authorization
-    Base64.encode64("#{Rails.application.secrets.sms_username}:#{Rails.application.secrets.sms_password}")
+    Base64.encode64("#{ENV['SMS_USER_NAME']}:#{ENV['SMS_PASSWORD']}")
   end
 
   def sms_deliver(phone, code)

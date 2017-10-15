@@ -30,12 +30,12 @@ class ApplicationController < ActionController::Base
 
     def authenticate_http_basic
       authenticate_or_request_with_http_basic do |username, password|
-        username == Rails.application.secrets.http_basic_username && password == Rails.application.secrets.http_basic_password
+        username == ENV['HTTP_BASIC_USERNAME'] && password == ENV['HTTP_BASIC_PASSWORD']
       end
     end
 
     def http_basic_auth_site?
-      Rails.application.secrets.http_basic_auth
+      ENV['HTTP_BASIC_AUTH']
     end
 
     def verify_lock
