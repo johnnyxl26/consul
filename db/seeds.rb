@@ -45,9 +45,9 @@ Setting['per_page_code_head'] = ''
 Setting['per_page_code_body'] = ''
 
 # Social settings
-Setting["twitter_handle"] = nil
+Setting["twitter_handle"] = "pearsonmoni"
 Setting["twitter_hashtag"] = nil
-Setting["facebook_handle"] = nil
+Setting["facebook_handle"] = "monicapearsonv"
 Setting["youtube_handle"] = nil
 Setting["telegram_handle"] = nil
 Setting["instagram_handle"] = nil
@@ -59,10 +59,10 @@ Setting["opendata_url"] = "/opendata"
 Setting["url"] = "http://example.com"
 
 # CONSUL installation's organization name
-Setting["org_name"] = "CONSUL"
+Setting["org_name"] = "Transformá CR"
 
 # CONSUL installation place name (City, Country...)
-Setting["place_name"] = "CONSUL-land"
+Setting["place_name"] = "Costa Rica"
 
 # Meta tags for SEO
 Setting["meta_description"] = nil
@@ -101,7 +101,7 @@ Setting['proposal_notification_minimum_interval_in_days'] = 3
 Setting['direct_message_max_per_day'] = 3
 
 # Email settings
-Setting['mailer_from_name'] = 'CONSUL'
+Setting['mailer_from_name'] = 'Transformá CR'
 Setting['mailer_from_address'] = 'noreply@consul.dev'
 
 # Verification settings
